@@ -1,0 +1,91 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  flex: 1;
+  max-width: 700px;
+  background: white;
+  padding: 30px;
+  margin-right: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.scoreboard {
+  width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+input[type=\"number\"], input[type=\"text\"] {
+  font-size: 1.2em;
+  padding: 10px;
+  width: 90%;
+  margin: 5px 0;
+}
+
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.question {
+  font-size: 2.8em;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.timer, .score, .result, .username {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1em;
+}
+
+.trophy {
+  margin-right: 6px;
+}
+
+.timestamp, .recent-scores {
+  font-size: 0.9em;
+  color: gray;
+  margin-top: 10px;
+}
+
+.recent-scores strong {
+  margin-top: 10px;
+  display: block;
+}
