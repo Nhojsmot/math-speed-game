@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Speed Game</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Math Speed Game</h1>
+    <div class="username">
+      Name: <input type="text" id="username" placeholder="Enter your name" />
+    </div>
+    <div class="timer">Time Left: <span id="time">30</span>s</div>
+    <div class="score">Score: <span id="score">0</span></div>
+    <div class="question" id="question"></div>
+    <input type="number" id="answer" />
+    <button onclick="submitAnswer()">Submit</button>
+    <div class="result" id="result"></div>
+    <div class="final-score" id="final"></div>
+    <button onclick="startGame()">Start New Game</button>
+  </div>
+
+  <div class="scoreboard">
+    <h2>Today's Scores</h2>
+    <ul id="scoreList"></ul>
+    <div class="timestamp" id="updateTime"></div>
+    <div class="recent-scores" id="recentScores"></div>
+  </div>
+
+  <audio id="correctSound" src="https://cdn.pixabay.com/download/audio/2022/10/31/audio_cb7fd3a134.mp3?filename=correct-2-46134.mp3"></audio>
+  <audio id="wrongSound" src="https://cdn.pixabay.com/download/audio/2022/02/23/audio_85b25d93b5.mp3?filename=wrong-126517.mp3"></audio>
+  <audio id="bgMusic" src="https://cdn.pixabay.com/download/audio/2022/03/30/audio_0cd982070b.mp3?filename=happy-fun-kids-music-159063.mp3" loop></audio>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
